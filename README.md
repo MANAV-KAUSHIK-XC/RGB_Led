@@ -9,3 +9,6 @@ test.ino(ino files are similar to cpp files) includes the RGB.h and tries to acc
 collect2: error: ld returned 1 exit status
 exit status 1
 Error compiling for board Arduino Uno.
+
+
+FIXED: Just added an inline identifier to the declaration of the constants. That error is there for future reference.
