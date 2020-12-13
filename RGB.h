@@ -23,7 +23,7 @@ class RGB {
   bool commonCathode;                   //True if LED is common cathode(common ground). False if LED common anode(common Vcc).
 
   public:
-  static const Color RED = {255,0,0}, GREEN = {0,255,0}, BLUE = {0,0,255},
+  static inline const Color RED = {255,0,0}, GREEN = {0,255,0}, BLUE = {0,0,255},
                      WHITE = {255, 255, 255}, GREY = {128,128,128}, YELLOW = {255,255,0},
                      CYAN = {0,255,255}, PURPLE = {127,0,255}, PINK = {255,0,255};
   
@@ -34,6 +34,5 @@ class RGB {
   void lightRGB(Color color);       //Lights the LED using struct Color variable.
 };
 
-//const Color RGB::RED, RGB::GREEN, RGB::BLUE, RGB::WHITE, RGB::GREY, RGB::YELLOW, RGB::CYAN, RGB::PURPLE, RGB::PINK;     //I has read that you need to define static class variables again for memory allocation. But doing so created some unexpected errors, so I have ommitted that line.
 
 #endif
